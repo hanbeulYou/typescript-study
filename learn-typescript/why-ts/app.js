@@ -8,10 +8,15 @@ var address = document.querySelector('#address');
 
 // user data
 var user = {};
+/**
+ * @returns {Promise<User>}
+ */
+function fetchUser() {
+  return axios.get(url);
+}
 
 function startApp() {
-  axios
-    .get(url)
+  fetchUser()
     .then(function (response) {
       user = response.data;
       username.innerText = user.name;
