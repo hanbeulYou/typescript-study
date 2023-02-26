@@ -10,9 +10,10 @@ arr.push('hi');
 
 // 배열 - 리터럴 적용
 const items: string[] = [];
+// 해당 type에 맞지 않은 값을 push하면 에러
 // items.push(10);
 
-// 튜플
+// 튜플(위치를 지정)
 const address: [string, number] = ['판교', 40];
 
 // 객체
