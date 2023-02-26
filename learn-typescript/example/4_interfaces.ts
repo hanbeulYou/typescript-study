@@ -43,11 +43,11 @@ let obj: StringRegexDictionary = {
 }
 
 // 인터페이스 확장
-interface Person {
+interface Personal {
   name: string;
   age: number; // 옵셔널 선택자 ? 동일하게 적용 가능
 }
-interface Developer extends Person {
+interface Developer extends Personal {
   language: string;
 }
 const hayou: Developer = { name: 'hayou', age: 28, language: 'ts' };

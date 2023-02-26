@@ -7,18 +7,18 @@
 // }
 type SumParameter = number;
 
-function sum(a: SumParameter, b: SumParameter) {
+function sumation(a: SumParameter, b: SumParameter) {
   return a + b;
 }
 
 // #2
-type Person = {
+type MyPerson = {
   name: string;
   age: number;
 };
 
-function getPerson(): Person {
-  // ...
+function getPerson(): MyPerson {
+  return {name : "hayou", age: 28};
 }
 
 // #3
