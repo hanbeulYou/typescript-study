@@ -6,6 +6,11 @@ function getArray(value: string[]) {
   return value;
 }
 
+// function trySplit(value: string | number) {
+//   if(typeof(value) === "string") return value.split('');
+//   return value.toLocaleString();
+// }
+
 // 제네릭 기본 문법 - 함수
 function getValue<T>(value: T): T {
   return value;
@@ -21,10 +26,10 @@ interface Developer<T> {
 const tony: Developer<number> = { name: 'tony', age: 100 };
 
 // 제네릭 타입 제한 - 구체적인 타입
-function getNumberAndArray<T>(value: T): T {
-  value.length; // X
-  return value;
-}
+// function getNumberAndArray<T>(value: T): T {
+//   value.length; // X
+//   return value;
+// }
 
 function getNumberAndArray<T>(value: T[]): T[] {
   value.length; // O
