@@ -53,6 +53,6 @@ function getAllowedOptions<T extends keyof ShoppingItems>(option: T): T {
     return option;
   }
 }
-getAllowedOptions('nothing');
-// const a = getAllowedOptions('name');
+// getAllowedOptions('nothing');
+const a = getAllowedOptions('name');
 // a.toUpperCase(); // Name
