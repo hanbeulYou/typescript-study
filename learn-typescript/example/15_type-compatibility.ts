@@ -14,15 +14,15 @@ myPerson = myDeveloper;
 myDeveloper = myPerson;
 
 // 함수
-let add = function(a: number): number {
+let myAdd = function(a: number): number {
   return a;
 }
-let sum = function(a: number, b: number): number {
+let mySum = function(a: number, b: number): number {
   return a+b;
 }
 
-sum = add;
-// add = sum;
+mySum = myAdd;
+// myAdd = mySum;
 
 // 제네릭
 interface Empty<T> {
