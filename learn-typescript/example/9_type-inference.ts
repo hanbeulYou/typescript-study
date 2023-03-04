@@ -24,3 +24,6 @@ var detailItems: DetailedDropdown<number> = {
   description: 'b',
   tag: 10
 }
+
+// Best Common Type (Union으로 추론)
+const myArr = [1, 2, "a", null];
